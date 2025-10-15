@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    background-image: url(https://preview.colorlib.com/theme/oneschool/images/hero_1.jpg);
+    position: relative;
+    height: 100vh;
+    background-size: cover;                    
+  background-position: center;            
+  z-index: 1;
+  font-family: "Mulish", sans-serif;
+}
+
+.heading::before{
+    content:"";
+    background-color: #32363b;
+    position: absolute;
+    inset: 0;
+    opacity: .9;
+    z-index: 0;
+}
+
+.container{
+    max-width: 1140px;
+    height: 90%;
+    margin: auto;
+}
+
+.flex{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+nav ul{
+  list-style: none;
+  display: flex;         
+ justify-content: center;
+  gap: 24px;      
+  font-size: 16px;
+  color: white;
+}
+
+nav a,a {
+  color: #fff;              
+  text-decoration: none;
+}
+
+.menu li a:hover {
+ background:#5b54e3; transform:translateY(-2px); 
+}
+
+.menu li a:visited {
+  color: #fff;        
+}
+
+.menu li a:active {
+  color: #a0a0ff;        
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #a0a0ff;
+  transition: width 0.3s ease;
+}
+
+.menu li a:hover::after {
+  width: 100%;
+}
+
+a{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.name{
+    padding: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: none;
+    border-radius: 24px;
+    background-color: #615DC2;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+     cursor:pointer; transition:transform .15s, .2s;
+}
+
+.name:hover{
+    background:#5b54e3; transform:translateY(-2px); }
+
+
+.menu{
+    display: flex;
+    font-weight: 700;
+    font-size: 18px;
+    align-items: center;
+    color: white;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    position: absolute;
+    top:50%;
+    left: 50%;         
+    transform: translate(-50%);
+    z-index: 2;
+}
+ .herotext{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+
+ .h1{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: normal;
+    color: white;
+    margin-bottom: 20px;
+ }
+
+ .Lorem{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: white;
+    margin-bottom: 30px;
+    word-wrap: break-word; 
+    width: 80%;    
+ }
+
+ .admis{
+    width: 205px;
+    height: 52px;
+    border-radius: 30px;
+    background-color: #7971EA;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+     cursor:pointer; transition:transform .15s, .2s;
+ }
+ .admis:hover {
+   background:#5b54e3; transform:translateY(-2px); }
+ 
+.login{
+    padding: 400px;
+    border-radius: 12px;
+    background-color: white;
+    width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);;
+}
+
+.hero{
+  position:absolute; top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  display:flex; align-items:center; justify-content:space-between;
+  width:80%; gap:40px; z-index:2;
+}
+
+.Login{
+  width:450px;
+  height: 300px;
+  background:#fff; color:#111;
+  padding:40px; border-radius:12px;
+  box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+.Login h2{ margin-bottom:20px; font-size:24px; font-weight:600; }
+
+.Login-form{
+  display:flex; flex-direction:column; gap:16px;
+}
+
+.Login input {
+  width:100%;
+  padding:12px 6px;
+  border:1px solid #d6d7dc; border-radius:8px;
+  font-size:15px; outline:none;
+  transition:border-color .2s, box-shadow .2s;
+  margin-bottom: 15px;
+}
+.Login input:focus{
+  border-color:#7971ea;
+  box-shadow:0 0 0 2px rgba(121,113,234,.2);
+}
+
+.Login button{
+    width: 112px; height: 48px;
+  background:#7971ea; color:#fff; border:0;
+  padding:12px 0; border-radius:30px;
+  font-weight:700; text-transform:uppercase;
+  cursor:pointer; transition:transform .15s, .2s;
+}
+.Login button:hover{ background:#5b54e3; transform:translateY(-2px); }
+
+.About {
+  padding: 100px 0;          
+  color: #333;
+  text-align: center;      
+  position: relative;  
+  z-index: 1;
+}
+
+.About h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.About p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #555;
+  text-align: left;
+}
